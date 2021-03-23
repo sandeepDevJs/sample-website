@@ -1,0 +1,65 @@
+.my-experties-cnt {
+	background-color: #fff;
+	padding: 10%;
+	font-family: "roboto condensed", sans-serif;
+}
+
+.my-experties-cnt h1 {
+	display: block;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 22px;
+	color: #000;
+	font-size: 45px;
+}
+
+.experties-box {
+	padding: 40px;
+}
+
+.experties-box h4 {
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 12px;
+	font-weight: 600;
+	display: block;
+	color: #000 !important;
+}
+
+.experties-box p {
+	font-family: "dm sans", sans-serif;
+	color: #000;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	line-height: 1.4;
+	font-weight: 300;
+}
+
+.experties-box .btn {
+	color: #ff8553;
+	font-weight: 500;
+	font-size: 16px;
+	position: relative;
+	display: inline-block;
+	transition: 0.7s;
+	font-family: "dm sans", sans-serif;
+}
+
+.experties-box .btn::before {
+	position: absolute;
+	content: "";
+	background: #ff8553;
+	width: 100%;
+	height: 2px;
+	bottom: -11px;
+}
+
+.experties-box .btn:hover {
+	color: #ff8553;
+	letter-spacing: 1px;
+}
+
+.experties-box img {
+	margin-bottom: 22px;
+}

@@ -1,0 +1,113 @@
+.myworks-cnt {
+	background-color: #fff;
+	padding: 10%;
+	font-family: "roboto condensed", sans-serif;
+}
+
+.myworks-cnt h1 {
+	display: block;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 22px;
+	color: #000;
+	font-size: 45px;
+}
+
+.myworks-cnt .box-img {
+	position: relative;
+	height: 360px;
+	max-height: 360px;
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin-bottom: 30px;
+}
+
+.box-img img {
+	height: 360px;
+	display: block;
+	object-fit: cover;
+}
+
+.box-img:hover .overlay {
+	transform: translate3d(0, 0, 0);
+}
+
+.work-btn2 {
+	border: 1px solid #ff8553;
+	font-family: "dm sans", sans-serif;
+	color: #ff8553;
+	background: 0 0;
+	border-radius: 30px;
+	text-transform: capitalize;
+	padding: 12px 36px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	position: relative;
+	transition: color 0.4s linear;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.work-btn2 i {
+	font-size: 16px;
+	margin-right: 10px;
+	color: #fff;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.work-btn2::before {
+	border: 1px solid transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101%;
+	height: 101%;
+	background: #fd8f5f;
+	z-index: -1;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+	transform: scaleY(0);
+	border-radius: 0;
+}
+
+.work-btn2:hover::before {
+	transform: scaleY(1);
+	border: 1px solid transparent;
+}
+
+.work-btn2:hover {
+	color: #fff;
+	background-color: #fd8f5f;
+}
+
+.overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	transition: transform 300ms;
+	background-color: rgba(0, 0, 0, 0.3);
+	transform: translate3d(0, calc(100% - 0rem), 0);
+}
+
+.overlay h5 {
+	padding: 10px;
+	float: right;
+}

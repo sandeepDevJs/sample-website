@@ -1,0 +1,21 @@
+.header-area .main-header {
+	padding: 0 85px;
+	color: white;
+}
+
+.header-transparent {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+	background-color: transparent;
+}
+
+.header-sticky.sticky-bar {
+	background: #ff8553;
+}
+
+.header-sticky.sticky-bar.sticky .main-menu ul li a {
+	padding: 20px !important;
+}

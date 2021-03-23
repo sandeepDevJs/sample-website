@@ -1,0 +1,142 @@
+nav {
+	background-color: transparent;
+	margin-bottom: 20%;
+}
+
+a {
+	margin: 2px 6px;
+}
+
+.menu-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 16px;
+	font-family: "roboto condensed", sans-serif;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+.nav-btn {
+	border: 1px solid #fff;
+	width: 160px;
+	color: #fff;
+	background: 0 0;
+	border-radius: 30px;
+	text-transform: capitalize;
+	padding: 12px 36px;
+	-moz-user-select: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	position: relative;
+	transition: color 0.4s linear;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.nav-btn i {
+	font-size: 16px;
+	margin-right: 10px;
+	color: #ff8553;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.nav-btn::before {
+	border: 1px solid transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101%;
+	height: 101%;
+	background: #fff;
+	z-index: -1;
+	transition: transform 0.5s;
+	transition-timing-function: ease;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+	transform: scaleY(0);
+	border-radius: 0;
+}
+
+.nav-btn:hover {
+	color: #ff8553;
+}
+
+.nav-btn:hover::before {
+	transform: scaleY(1);
+	border: 1px solid transparent;
+}
+
+nav ul li a {
+	color: #fff;
+	font-weight: 400;
+	padding: 34px 4px;
+	display: block;
+	font-size: 16px;
+	font-family: "roboto condensed", sans-serif;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	text-transform: capitalize;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	bottom: -20px;
+	right: 5px;
+	left: -5px;
+	height: 3px;
+	z-index: 1;
+	background: #fff;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+nav ul li:hover > a {
+	color: #fff;
+}
+
+.dropdown-menu {
+	transition: 0.4s;
+}
+
+.dropdown-item {
+	color: #ff8553;
+	transition: 0.2s linear;
+}
+
+.dropdown-item:hover {
+	padding-left: 34px;
+}
+
+nav ul li:hover > .dropdown-menu {
+	display: block;
+}
+
+nav ul li:hover > a::after {
+	left: 0;
+	right: auto;
+	width: 100%;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}

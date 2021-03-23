@@ -1,0 +1,57 @@
+.about-me-cnt {
+	background-color: #fff;
+	padding: 10%;
+	font-family: "roboto condensed", sans-serif;
+}
+
+.about-me-cnt h1 {
+	display: block;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	color: #000;
+	font-size: 45px;
+}
+
+.text-container p {
+	font-family: "dm sans", sans-serif;
+	width: 100%;
+}
+
+.bottom-text {
+	color: #ff8553;
+	font-size: 26px;
+	font-family: "dm sans", sans-serif;
+}
+
+.single-skill {
+	margin-bottom: 25px;
+}
+
+.single-skill .progress-count {
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress-count span {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #ff8553;
+	margin: 0;
+}
+
+.single-skill .progress {
+	height: 4px;
+	border-radius: 0;
+	background: #ffe7de;
+	border-radius: 4px;
+}
+
+.progress-count p {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #000d21;
+	margin-bottom: 10px;
+}
