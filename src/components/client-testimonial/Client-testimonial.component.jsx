@@ -1,5 +1,4 @@
 import React from "react";
-// import { Swiper, Navigation, Pagination } from "swiper/dist/js/swiper.esm";
 import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom";
 import { Swiper, Navigation, Pagination } from "swiper/swiper.esm";
 import "swiper/swiper.scss";
