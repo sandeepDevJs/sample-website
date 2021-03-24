@@ -25,7 +25,6 @@ const MyWorks = () => {
 							<img
 								src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery2.png"
 								alt=""
-								srcset=""
 							/>
 							<div className="overlay">
 								<h5>Strategy & Direction</h5>
@@ -39,7 +38,6 @@ const MyWorks = () => {
 							<img
 								src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery3.png"
 								alt=""
-								srcset=""
 							/>
 							<div className="overlay">
 								<h5>Strategy & Direction</h5>
@@ -51,7 +49,6 @@ const MyWorks = () => {
 							<img
 								src="https://preview.colorlib.com/theme/calvin/assets/img/gallery/gallery4.png"
 								alt=""
-								srcset=""
 							/>
 							<div className="overlay">
 								<h5>Strategy & Direction</h5>

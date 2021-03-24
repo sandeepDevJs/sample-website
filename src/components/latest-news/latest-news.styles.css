@@ -1,0 +1,153 @@
+.latest-cnt {
+	background-color: #fff;
+	padding: 10%;
+	font-family: "roboto condensed", sans-serif;
+}
+
+.latest-cnt h1 {
+	display: block;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 22px;
+	color: #000;
+	font-size: 45px;
+}
+
+.latest-cnt .box-news,
+.box-news2 {
+	position: relative;
+	height: 360px;
+	max-height: 360px;
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin-bottom: 30px;
+	transition: all 0.5s ease-out 0s;
+}
+
+.single-location {
+	position: relative;
+	transition: 0.5s ease;
+	margin-bottom: 30px;
+}
+
+.location-img {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+}
+
+.location-img::before {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+	content: "";
+	z-index: 1;
+}
+
+.location-img img {
+	width: 100%;
+	transform: scale(1);
+	transition: all 0.5s ease-out 0s;
+}
+
+single-location:hover .location-img img {
+	transform: scale(1.1);
+}
+
+.single-location:hover .location-details p {
+	text-decoration: underline #ffff;
+}
+
+.location-details {
+	position: absolute;
+	left: 45px;
+	bottom: 33px;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.location-details p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	display: inline-block;
+	padding-right: 17px;
+	padding-top: 19px;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.location-details a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.location-details p a {
+	font-family: "dm sans", sans-serif;
+	font-size: 20px;
+}
+
+.location-details p a:hover {
+	color: white;
+}
+
+.location-details .location-btn {
+	padding: 4px 15px;
+	background: #ff8553;
+	color: #fff;
+	border-radius: 30px;
+	display: inline-block;
+	transition: 0.4s ease;
+}
+
+.location-btn:hover {
+	text-decoration: none;
+	background-color: white;
+	color: #ff8553;
+}
+
+.location-details ul {
+	list-style-type: none;
+	list-style: none;
+	display: inline-block;
+	padding-left: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+.home-blog .single-location .location-details ul li {
+	list-style: none;
+	list-style-type: none;
+	display: inline-block;
+	color: #fff;
+	font-size: 22px;
+}
+
+.single-location:hover .location-details p {
+	text-decoration: underline #ffff;
+}
+
+.blog-active button {
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	.latest-cnt {
+		padding: 4%;
+	}
+
+	.latest-cnt h1 {
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+}

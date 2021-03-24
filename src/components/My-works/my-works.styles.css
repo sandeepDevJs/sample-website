@@ -111,3 +111,13 @@
 	padding: 10px;
 	float: right;
 }
+
+@media (max-width: 800px) {
+	.myworks-cnt {
+		padding: 4%;
+	}
+
+	.myworks-cnt h1 {
+		font-size: 25px;
+	}
+}

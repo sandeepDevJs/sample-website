@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<div className="header-area header-transparent">
 			<div className="main-header header-sticky">
-				<div className="container-fluid">
+				<div className="container">
 					<Navbar />
 				</div>
 			</div>

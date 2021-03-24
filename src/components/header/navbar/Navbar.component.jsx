@@ -1,61 +1,64 @@
 import React from "react";
 import NavItem from "../nav-item/Nav-item.component";
+import Dropdown from "./Dropdown.component";
 import "./navbar.styles.css";
 
-const Navbar = () => {
+const Navbar = ({ footerNav }) => {
 	return (
-		<nav class="navbar navbar-expand-lg">
+		<nav className="navbar navbar-expand-lg">
 			<button
-				class="navbar-toggler"
+				className="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
-				data-target="#navbarTogglerDemo01"
-				aria-controls="navbarTogglerDemo01"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
 				aria-expanded="false"
 				aria-label="Toggle navigation"
 			>
-				<span class="navbar-toggler-icon"></span>
+				<span className="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="/">
-					<img
-						src="https://preview.colorlib.com/theme/calvin/assets/img/logo/logo.png"
-						className="d-inline-block align-top"
-						alt="logo"
-					/>
-				</a>
+			<div className="collapse navbar-collapse" id="navbarTogglerDemo0156">
+				{!footerNav && (
+					<a className="navbar-brand" href="/">
+						<img
+							src="https://preview.colorlib.com/theme/calvin/assets/img/logo/logo.png"
+							className="d-inline-block align-top"
+							alt="logo"
+						/>
+					</a>
+				)}
 
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-wrapper">
+				<ul className="navbar-nav mr-auto mt-2 mt-lg-0 menu-wrapper">
 					<NavItem text={"Home"} />
 					<NavItem text={"Work"} />
 					<NavItem text={"Service"} />
-					<li class="nav-item dropdown">
+					<li className="nav-item dropdown">
 						<a
-							class="nav-link"
+							className="nav-link"
 							href="/"
 							id="navbarDropdownMenuLink"
 							data-toggle="dropdown"
 							aria-expanded="false"
+							style={{ color: "white" }}
 						>
 							Blog
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<span class="dropdown-item" style={{ color: "#ff8553" }} href="/">
-								Action
-							</span>
-							<span class="dropdown-item" style={{ color: "#ff8553" }} href="/">
-								Another action
-							</span>
-							<span class="dropdown-item" style={{ color: "#ff8553" }} href="/">
-								Something else here
-							</span>
+						<div
+							className="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+						>
+							<Dropdown title={"Action"} />
+							<Dropdown title={"Some Action"} />
+							<Dropdown title={"Some Other Action"} />
 						</div>
 					</li>
 					<NavItem text={"Contact"} />
 				</ul>
-				<div class="form-inline my-2 my-lg-0">
-					<button class="nav-btn">Let's Talk</button>
-				</div>
+				{!footerNav && (
+					<div className="form-inline my-2 my-lg-0">
+						<button className="nav-btn">Let's Talk</button>
+					</div>
+				)}
 			</div>
 		</nav>
 	);

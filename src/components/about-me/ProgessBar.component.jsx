@@ -2,14 +2,14 @@ import React from "react";
 
 const ProgessBar = ({ width, skill }) => {
 	return (
-		<div class="single-skill">
-			<div class="progress-count">
+		<div className="single-skill">
+			<div className="progress-count">
 				<p>{skill}</p>
 				<span>{width}</span>
 			</div>
-			<div class="progress">
+			<div className="progress">
 				<div
-					class="progress-bar wow slideInLeft"
+					className="progress-bar wow slideInLeft"
 					data-wow-duration="1s"
 					data-wow-delay=".5s"
 					aria-valuenow="25"
@@ -21,6 +21,7 @@ const ProgessBar = ({ width, skill }) => {
 						animationDelay: "0.5s",
 						animationName: "slideInLeft",
 						color: "#ff8553",
+						backgroundColor: "#ff8553",
 					}}
 					aria-valuemin="0"
 					aria-valuemax="100"

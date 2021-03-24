@@ -2,8 +2,8 @@ import React from "react";
 
 const NavItem = ({ text }) => {
 	return (
-		<li class="nav-item">
-			<a class="nav-link" href="/">
+		<li className="nav-item">
+			<a className="nav-link" href="/" style={{ color: "white" }}>
 				{text}
 			</a>
 		</li>

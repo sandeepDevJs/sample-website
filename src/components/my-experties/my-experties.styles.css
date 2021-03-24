@@ -63,3 +63,17 @@
 .experties-box img {
 	margin-bottom: 22px;
 }
+
+@media (max-width: 800px) {
+	.my-experties-cnt {
+		padding: 4%;
+	}
+
+	.my-experties-cnt h1 {
+		font-size: 25px;
+	}
+
+	.experties-box .btn {
+		font-size: 12px;
+	}
+}
