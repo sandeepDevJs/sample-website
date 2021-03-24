@@ -41,7 +41,7 @@ const Footer = () => {
 						<Col md={6}>
 							<div className="footer-right-part">
 								<button className="cv-btn">Download CV</button>
-								<button className="talk-btn">Lets's Talk</button>
+								<button className="talk-btn">Let's Talk</button>
 							</div>
 						</Col>
 					</Row>
